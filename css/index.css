@@ -1,5 +1,7 @@
 /* 头部样式开始 */
 .header {
+  display: inline-block;
+  overflow: hidden;
   width: 100%;
   height: 140px;
   background-color: #fff;
@@ -85,6 +87,16 @@
 
 .list > p:hover {
   background-color: #ddd;
+}
+
+.shopCart {
+  width: 130px;
+  height: 34px;
+  background-color: #c52219;
+  margin: 25px 0 0 900px ;
+  text-align: center;
+  line-height: 34px;
+  border-color: #eee;
 }
 
 /* 头部样式结束 */
@@ -220,6 +232,12 @@
   color: #666;
 }
 
+.nickname:hover {
+  width: 100%;
+  height: 50%;
+  color: #e1251b;
+}
+
 .userHandle {
   width: 100%;
   height: 50%;
@@ -228,18 +246,39 @@
 .userLogin {
   color: #333;
 }
+
+.userLogin:hover {
+color: #e1251b;
+}
 .userRegister {
   color: #333;
 }
+
+.userRegister:hover {
+  color: #e1251b;
+}
+
 
 .userProfit {
   width: 100%;
   height: 25px;
   margin: 10px 0 0 0;
-  /* background-color: #c81623; */
 }
 
 .userWelfare {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 13px;
+  background: #e1251b;
+}
+
+.userWelfare:hover {
   display: inline-block;
   margin: 0 5px;
   width: 70px;
@@ -263,6 +302,19 @@
   color: #e5d790;
   border-radius: 13px;
   background: #363634;
+}
+
+.plusMember:hover {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 13px;
+  background: #c52219;
 }
 
 .jdNews {
@@ -306,7 +358,6 @@
 }
 
 .newsTitle {
-  /* max-width: 160px; */
   width: 160px;
   height: 16px;
   font-size: 11px;
@@ -321,6 +372,10 @@
 .newsLink {
   color: #666;
   text-decoration: none;
+}
+
+.newsLink:hover {
+  color: #e1251b;
 }
 
 .newsTag {
@@ -377,7 +432,20 @@
   height: 28px;
 }
 
+
 .hoverIcns {
+  display: none;
+  width: 28px;
+  height: 28px;
+}
+
+.service:hover .hoverIcns{
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+
+.service:hover .normalIcns{
   display: none;
   width: 28px;
   height: 28px;
@@ -390,6 +458,24 @@
   font-size: 12px;
   border-bottom: 2px solid #fff;
   color: #333;
+}
+
+.service:hover .serviceText {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-bottom: 2px solid #fff;
+  color: #e1251b;
+}
+
+.serviceText:hover {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-bottom: 2px solid #fff;
+  color: #e1251b;
 }
 
 /* banner样式结束 */
