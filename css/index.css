@@ -1,0 +1,449 @@
+/* 头部样式开始 */
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  width: 190px;
+  height: 120px;
+  margin-top: 10px;
+  background: url("../images/sprite.png") no-repeat;
+}
+
+.search-log {
+  display: none;
+  float: left;
+  width: 125px;
+  height: 40px;
+  background: url("../images/sprite.png") no-repeat;
+  background-position: 0 -120px;
+}
+
+.search {
+  float: left;
+}
+
+.form {
+  position: relative;
+  width: 550px;
+  height: 36px;
+  border: 2px solid #e2231a;
+  box-sizing: border-box;
+  margin-top: 25px;
+  margin-left: 70px;
+}
+
+.hot-word {
+  float: left;
+  width: 425px;
+  height: 26px;
+  padding: 2px 44px 2px 17px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.form > button {
+  float: left;
+  width: 58px;
+  height: 32px;
+  line-height: 32px;
+  background-color: #e1251b;
+  cursor: pointer;
+}
+
+.form > button:hover {
+  background-color: #c81623;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  width: 488px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.list > p {
+  text-align: left;
+  line-height: 25px;
+  font-size: 14px;
+  color: #666;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.list > p:hover {
+  background-color: #ddd;
+}
+
+/* 头部样式结束 */
+/* banner样式开始 */
+.banner {
+  width: 100%;
+  height: 470px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.banner-box {
+  width: 790px;
+  height: 470px;
+  float: left;
+  margin: 0 10px;
+}
+
+.slide-banner {
+  position: relative;
+  float: left;
+  width: 590px;
+  height: 470px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  width: 25px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 18px 18px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 18px 0 0 18px;
+}
+
+.banner-btn {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+
+.banner-btn > li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.banner-btn > .btn-active {
+  width: 9px;
+  height: 9px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-top: -2px;
+}
+
+.banner-aside {
+  width: 190px;
+  height: 470px;
+  float: right;
+}
+
+.banner-aside li {
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.banner-aside img {
+  width: 100%;
+}
+
+.banner-left {
+  width: 190px;
+  height: 470px;
+  background-color: #fff;
+  float: left;
+}
+
+.banner-right {
+  width: 190px;
+  height: 470px;
+  background-color: #fff;
+  float: left;
+}
+
+.user {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 102px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  margin: 13px 0 0 20px;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.userProfile {
+  overflow: hidden;
+  width: 106px;
+  height: 40px;
+  line-height: 20px;
+  margin: 16px 0 0 74px;
+  font-size: 12px;
+  font-family: Microsoft Yahei;
+  color: #666;
+}
+
+.nickname {
+  width: 100%;
+  height: 50%;
+  color: #666;
+}
+
+.userHandle {
+  width: 100%;
+  height: 50%;
+}
+
+.userLogin {
+  color: #333;
+}
+.userRegister {
+  color: #333;
+}
+
+.userProfit {
+  width: 100%;
+  height: 25px;
+  margin: 10px 0 0 0;
+  /* background-color: #c81623; */
+}
+
+.userWelfare {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 13px;
+  background: #c52219;
+}
+
+.plusMember {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #e5d790;
+  border-radius: 13px;
+  background: #363634;
+}
+
+.jdNews {
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  width: 100%;
+  height: 130px;
+  padding: 10px 0 0 0;
+  font-family: Microsoft YaHei;
+  /* background-color: #c81623; */
+}
+
+.jdTitle {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin: 0 0 8px 0;
+}
+
+.title {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 0 0 15px;
+  color: #333;
+}
+
+.moreNews {
+  width: auto;
+  height: 21px;
+  margin: 0 0 0 60px;
+  font-size: 12px;
+  color: #999;
+}
+
+.newsList {
+  width: 160px;
+  margin: 0 0 0 15px;
+  height: 88px;
+  /* background-color: #e5d790; */
+}
+
+.newsTitle {
+  /* max-width: 160px; */
+  width: 160px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 16px;
+  margin-bottom: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #999;
+}
+
+.newsLink {
+  color: #666;
+  text-decoration: none;
+}
+
+.newsTag {
+  display: inline-block;
+  position: relative;
+  font-size: 12px;
+  height: 16px;
+  width: 35px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: 0;
+  color: #e1251b;
+  background-color: rgba(225, 37, 27, 0.08);
+  margin-right: 6px;
+}
+
+.jdService {
+  overflow: hidden;
+  width: 100%;
+  height: 238px;
+  font-family: Microsoft YaHei;
+  /* background-color: #c81623; */
+}
+
+.serviceList {
+  padding-top: 5px;
+  height: 225px;
+}
+
+.service {
+  position: relative;
+  float: left;
+  width: 63px;
+  height: 55px;
+  background: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.serviceLink {
+  display: block;
+}
+
+.serviceIcns {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.normalIcns {
+  width: 28px;
+  height: 28px;
+}
+
+.hoverIcns {
+  width: 28px;
+  height: 28px;
+}
+
+.serviceText {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  border-bottom: 2px solid #fff;
+  color: #333;
+}
+
+/* banner样式结束 */
+/* 主体样式开始 */
+.home {
+  position: relative;
+  height: 4000px;
+}
+
+.miaosha {
+  height: 260px;
+  background-color: pink;
+}
+
+.tese {
+  height: 980px;
+  background-color: palegreen;
+}
+
+.guangchang {
+  height: 1005px;
+  background-color: palevioletred;
+}
+
+.forU {
+  height: 666px;
+  background-color: paleturquoise;
+}
+
+/* 电梯样式 */
+.elevator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 615px;
+  transition: all 0.5s;
+}
+
+.elevator > a {
+  display: block;
+  width: 58px;
+  height: 38px;
+  color: #333;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 0;
+  background-color: #fff;
+}
+
+.elevator-fix {
+  position: fixed;
+  top: 75px;
+}
+
+.elevator > .active {
+  color: #e1251b;
+}
+
+/* 主体样式结束 */
