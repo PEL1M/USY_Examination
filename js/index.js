@@ -178,44 +178,207 @@ window.onscroll = function () {
     }
 }
 
-// 昵称鼠标悬停变色效果
-document.getElementById("nickname").onmouseover = function () {
-    document.getElementById("nickname").style.color = "#e1251b";
-}
-document.getElementById("nickname").onmouseleave = function () {
-    document.getElementById("nickname").style.color = "#666";
-}
+// 昵称鼠标悬停变色
+$(".nickname").mouseover(function () {
+    $(".nickname").css("color", "#e1251b");
+});
+
+$(".nickname").mouseleave(function () {
+    $(".nickname").css("color", "#666");
+});
 
 // 登录鼠标悬停变色
-document.getElementById("userLogin").onmouseover = function () {
-    document.getElementById("userLogin").style.color = "#e1251b";
-}
-document.getElementById("userLogin").onmouseleave = function () {
-    document.getElementById("userLogin").style.color = "#333";
-}
+$(".userLogin").mouseover(function () {
+    $(".userLogin").css("color", "#e1251b");
+});
+
+$(".userLogin").mouseleave(function () {
+    $(".userLogin").css("color", "#666");
+});
 
 // 注册鼠标悬停变色
-document.getElementById("userRegister").onmouseover = function () {
-    document.getElementById("userRegister").style.color = "#e1251b";
-}
-document.getElementById("userRegister").onmouseleave = function () {
-    document.getElementById("userRegister").style.color = "#333";
-}
+$(".userRegister").mouseover(function () {
+    $(".userRegister").css("color", "#e1251b");
+});
+
+$(".userRegister").mouseleave(function () {
+    $(".userRegister").css("color", "#666");
+});
 
 // 新人福利鼠标悬停变色
-document.getElementById("userWelfare").onmouseover = function () {
-    document.getElementById("userWelfare").style.background = "#c52219";
-}
-document.getElementById("userWelfare").onmouseleave = function () {
-    document.getElementById("userWelfare").style.background = "#e1251b";
-}
+$(".userWelfare").mouseover(function () {
+    $(".userWelfare").css("background", "#c52219");
+});
+
+$(".userWelfare").mouseleave(function () {
+    $(".userWelfare").css("background", "#e1251b");
+});
+
 
 // 会员鼠标悬停变色
-document.getElementById("plusMember").onmouseover = function () {
-    document.getElementById("plusMember").style.background = "#c52219";
-    document.getElementById("plusMember").style.color = "#fff";
-}
-document.getElementById("plusMember").onmouseleave = function () {
-    document.getElementById("plusMember").style.background = "#363634";
-    document.getElementById("plusMember").style.color = "#e5d790";
-}
+$(".plusMember").mouseover(function () {
+    $(".plusMember").css("background", "#c52219");
+    $(".plusMember").css("color", "#fff");
+});
+
+$(".plusMember").mouseleave(function () {
+    $(".plusMember").css("background", "#363634");
+    $(".plusMember").css("color", "#e5d790");
+});
+
+// 服务图标悬停变色
+// 礼品卡
+$("#giftCard").mouseover(function () {
+    $("#giftCardNormal").css("display", "none");
+    $("#giftCardHover").css("display", "inline-block");
+    $("#giftCardText").css("color", "#e1251b");
+});
+
+$("#giftCard").mouseleave(function () {
+    $("#giftCardNormal").css("display", "inline-block");
+    $("#giftCardHover").css("display", "none");
+    $("#giftCardText").css("color", "#333");
+});
+
+// 企业购
+$("#business").mouseover(function () {
+    $("#businessNormal").css("display", "none");
+    $("#businessHover").css("display", "inline-block");
+    $("#businessText").css("color", "#e1251b");
+});
+
+$("#business").mouseleave(function () {
+    $("#businessNormal").css("display", "inline-block");
+    $("#businessHover").css("display", "none");
+    $("#businessText").css("color", "#333");
+});
+
+// 话费
+$("#phoneBill").mouseover(function () {
+    $("#pBNormal").css("display", "none");
+    $("#pBHover").css("display", "inline-block");
+    $("#pBText").css("color", "#e1251b");
+});
+
+$("#phoneBill").mouseleave(function () {
+    $("#pBNormal").css("display", "inline-block");
+    $("#pBHover").css("display", "none");
+    $("#pBText").css("color", "#333");
+});
+
+// 游戏
+$("#game").mouseover(function () {
+    $("#gameNormal").css("display", "none");
+    $("#gameHover").css("display", "inline-block");
+    $("#gameText").css("color", "#e1251b");
+});
+
+$("#game").mouseleave(function () {
+    $("#gameNormal").css("display", "inline-block");
+    $("#gameHover").css("display", "none");
+    $("#gameText").css("color", "#333");
+});
+
+// 加油卡
+$("#fuelCard").mouseover(function () {
+    $("#fuelCardNormal").css("display", "none");
+    $("#fuelCardHover").css("display", "inline-block");
+    $("#fuelCardText").css("color", "#e1251b");
+});
+
+$("#fuelCard").mouseleave(function () {
+    $("#fuelCardNormal").css("display", "inline-block");
+    $("#fuelCardHover").css("display", "none");
+    $("#fuelCardText").css("color", "#333");
+});
+
+// 白条
+$("#IOU").mouseover(function () {
+    $("#IOUNormal").css("display", "none");
+    $("#IOUHover").css("display", "inline-block");
+    $("#IOUText").css("color", "#e1251b");
+});
+
+$("#IOU").mouseleave(function () {
+    $("#IOUNormal").css("display", "inline-block");
+    $("#IOUHover").css("display", "none");
+    $("#IOUText").css("color", "#333");
+});
+
+// 机票
+$("#planeTicket").mouseover(function () {
+    $("#pTNormal").css("display", "none");
+    $("#pTHover").css("display", "inline-block");
+    $("#pTText").css("color", "#e1251b");
+});
+
+$("#planeTicket").mouseleave(function () {
+    $("#pTNormal").css("display", "inline-block");
+    $("#pTHover").css("display", "none");
+    $("#pTText").css("color", "#333");
+});
+
+// 电影票
+$("#movieTicket").mouseover(function () {
+    $("#mTNormal").css("display", "none");
+    $("#mTHover").css("display", "inline-block");
+    $("#mTText").css("color", "#e1251b");
+});
+
+$("#movieTicket").mouseleave(function () {
+    $("#mTNormal").css("display", "inline-block");
+    $("#mTHover").css("display", "none");
+    $("#mTText").css("color", "#333");
+});
+
+// 五金城 
+$("#hardwareShop").mouseover(function () {
+    $("#hSNormal").css("display", "none");
+    $("#hSHover").css("display", "inline-block");
+    $("#hSText").css("color", "#e1251b");
+});
+
+$("#hardwareShop").mouseleave(function () {
+    $("#hSNormal").css("display", "inline-block");
+    $("#hSHover").css("display", "none");
+    $("#hSText").css("color", "#333");
+});
+
+// 酒店
+$("#hotel").mouseover(function () {
+    $("#hotelNormal").css("display", "none");
+    $("#hotelHover").css("display", "inline-block");
+    $("#hotelText").css("color", "#e1251b");
+});
+
+$("#hotel").mouseleave(function () {
+    $("#hotelNormal").css("display", "inline-block");
+    $("#hotelHover").css("display", "none");
+    $("#hotelText").css("color", "#333");
+});
+
+// 火车票
+$("#trainTicket").mouseover(function () {
+    $("#tTNormal").css("display", "none");
+    $("#tTHover").css("display", "inline-block");
+    $("#tTText").css("color", "#e1251b");
+});
+
+$("#trainTicket").mouseleave(function () {
+    $("#tTNormal").css("display", "inline-block");
+    $("#tTHover").css("display", "none");
+    $("#tTText").css("color", "#333");
+});
+
+// 云主机
+$("#vps").mouseover(function () {
+    $("#vpsNormal").css("display", "none");
+    $("#vpsHover").css("display", "inline-block");
+    $("#vpsText").css("color", "#e1251b");
+});
+
+$("#vps").mouseleave(function () {
+    $("#vpsNormal").css("display", "inline-block");
+    $("#vpsHover").css("display", "none");
+    $("#vpsText").css("color", "#333");
+});

@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Li Xuan
  * @Date: 2022-12-06 12:27:34
- * @LastEditTime: 2022-12-11 15:52:00
+ * @LastEditTime: 2022-12-11 18:03:55
  * @LastEditDevice: PEL1M's MacBook Pro 
 -->
 <!DOCTYPE html>
@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>京东</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -23,7 +24,6 @@
     <div class="header">
         <div class="wrap">
             <div class="logo">
-
             </div>
             <div class="search">
                 <div class="search-log"></div>
@@ -36,6 +36,9 @@
 
                     </div>
                 </div>
+            </div>
+            <div class="shopCart">
+                
             </div>
         </div>
     </div>
@@ -83,7 +86,7 @@
                 <div class="user">
                     <div class="avatar">
                         <a href="" target="_blank">
-                        <image class="avatarImg" src="images/avatar.png" />
+                            <image class="avatarImg" src="images/avatar.png" />
                         </a>
                     </div>
                     <div class="userProfile">
@@ -165,169 +168,173 @@
                 <div class="jdService">
                     <ul class="serviceList">
                         <!-- 礼品卡 -->
-                        <li class="service">
+                        <li class="service" id="giftCard">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/giftCard.png" />
-                                    <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/giftCard_hover.png" /> -->
+                                    <img class="normalIcns" id="giftCardNormal" src="./images/service/giftCard.png" />
+                                    <!-- 悬停icns -->
+                                    <img class="hoverIcns" id="giftCardHover" src="./images/service/giftCard_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="giftCardText">
                                     礼品卡
                                 </span>
                             </a>
                         </li>
                         <!-- 企业购 -->
-                        <li class="service">
+                        <li class="service" id="business">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/business.png" />
+                                    <img class="normalIcns" id="businessNormal" src="./images/service/business.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/business_hover.png" /> -->
+                                    <img class="hoverIcns" id="businessHover" src="./images/service/business_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="businessText">
                                     企业购
                                 </span>
                             </a>
                         </li>
                         <!-- 话费 -->
-                        <li class="service">
+                        <li class="service" id="phoneBill">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/phoneBill.png" />
+                                    <img class="normalIcns" id="pBNormal" src="./images/service/phoneBill.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/phoneBill_hover.png" /> -->
+                                    <img class="hoverIcns" id="pBHover" src="./images/service/phoneBill_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="pBText">
                                     话费
                                 </span>
                             </a>
                         </li>
                         <!-- 游戏 -->
-                        <li class="service">
+                        <li class="service" id="game">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/game.png" />
+                                    <img class="normalIcns" id="gameNormal" src="./images/service/game.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/game_hover.png" /> -->
+                                    <img class="hoverIcns" id="gameHover" src="./images/service/game_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="gameText">
                                     游戏
                                 </span>
                             </a>
                         </li>
                         <!-- 加油卡 -->
-                        <li class="service">
+                        <li class="service" id="fuelCard">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/fuelCard.png" />
+                                    <img class="normalIcns" id="fuelCardNormal" src="./images/service/fuelCard.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/fuelCard_hover.png" /> -->
+                                    <img class="hoverIcns" id="fuelCardHover" src="./images/service/fuelCard_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="fuelCardText">
                                     加油卡
                                 </span>
                             </a>
                         </li>
                         <!-- 白条 -->
-                        <li class="service">
+                        <li class="service" id="IOU">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/IOU.png" />
+                                    <img class="normalIcns" id="IOUNormal" src="./images/service/IOU.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/IOU_hover.png" /> -->
+                                    <img class="hoverIcns" id="IOUHover" src="./images/service/IOU_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="IOUText">
                                     白条
                                 </span>
                             </a>
                         </li>
                         <!-- 机票 -->
-                        <li class="service">
+                        <li class="service" id="planeTicket">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/planeTicket.png" />
+                                    <img class="normalIcns" id="pTNormal" src="./images/service/planeTicket.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/planeTicket_hover.png" /> -->
+                                    <img class="hoverIcns" id="pTHover"
+                                        src="./images/service/planeTicket_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="pTText">
                                     机票
                                 </span>
                             </a>
                         </li>
                         <!-- 电影票 -->
-                        <li class="service">
+                        <li class="service" id="movieTicket">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/movieTicket.png" />
+                                    <img class="normalIcns" id="mTNormal" src="./images/service/movieTicket.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/movieTicket_hover.png" /> -->
+                                    <img class="hoverIcns" id="mTHover"
+                                        src="./images/service/movieTicket_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="mTText">
                                     电影票
                                 </span>
                             </a>
                         </li>
                         <!-- 五金城 -->
-                        <li class="service">
+                        <li class="service" id="hardwareShop">
                             <a href="" class="serviceLink" target="_blank">
-                                <i class="serviceIcns">
+                                <i class="serviceIcns" >
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/hardwareShop.png" />
+                                    <img class="normalIcns" id="hSNormal" src="./images/service/hardwareShop.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/hardwareShop_hover.png" /> -->
+                                    <img class="hoverIcns"  id="hSHover" 
+                                        src="./images/service/hardwareShop_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="hSText">
                                     五金城
                                 </span>
                             </a>
                         </li>
                         <!-- 酒店 -->
-                        <li class="service">
+                        <li class="service" id="hotel">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/hotel.png" />
+                                    <img class="normalIcns" id="hotelNormal" src="./images/service/hotel.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/hotel_hover.png" /> -->
+                                    <img class="hoverIcns" id="hotelHover" src="./images/service/hotel_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="hoverText">
                                     酒店
                                 </span>
                             </a>
                         </li>
                         <!-- 火车票 -->
-                        <li class="service">
+                        <li class="service" id="trainTicket">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/trainTicket.png" />
+                                    <img class="normalIcns" id="tTNormal" src="./images/service/trainTicket.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/trainTicket_hover.png" /> -->
+                                    <img class="hoverIcns" id="tTHover"
+                                        src="./images/service/trainTicket_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="tTText">
                                     火车票
                                 </span>
                             </a>
                         </li>
                         <!-- 云主机 -->
-                        <li class="service">
+                        <li class="service" id="vps">
                             <a href="" class="serviceLink" target="_blank">
                                 <i class="serviceIcns">
                                     <!-- 静态icns -->
-                                    <img class="normalIcns" src="./images/service/vps.png" />
+                                    <img class="normalIcns" id="vpsNormal" src="./images/service/vps.png" />
                                     <!-- 选中icns -->
-                                    <!-- <img class="hoverIcns" src="./images/service/vps_hover.png" /> -->
+                                    <img class="hoverIcns" id="vpsHover" src="./images/service/vps_hover.png" />
                                 </i>
-                                <span class="serviceText">
+                                <span class="serviceText" id="vpsText">
                                     云主机
                                 </span>
                             </a>
