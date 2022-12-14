@@ -3,41 +3,537 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>京东购物车</title>
-		
+		<!-- <link rel="stylesheet" type="text/css" href="../css/index.css"/> -->
 		<link rel="stylesheet" type="text/css" href="../css/shopCart.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 	</head>
 	<body>
 		<!--导航开始-->
-		<div class="nav">
-			
-			<div class="warp">
-				<ul class="nav_ul1">
-					<li><a href=""><i class="iconfont">&#xe6d3;</i></a></li>
-					<li><a href="">京东首页</a></li>
-					<li><a href="">配送到：宿州</a></li>
+		<div class="shortcut">
+			<div class="topbar">
+				<!-- 定位地区选择悬停下拉 -->
+				<div class="location">
+					<div class="dropdownBtn">
+						<a href=" " class="dropdownBtnLink">
+							<span class="userLocation">
+								<img class="locationImg" src="../images/location.png">
+								海南</span>
+						</a>
+						<div class="dropdownLayer">
+							<div class="area-content-wrap">
+								<div class="area-content">
+									<div class="area-content-list">
+										<div class="item">
+											<a href=" ">北京</a>
+										</div>
+										<div class="item">
+											<a href=" ">上海</a>
+										</div>
+										<div class="item">
+											<a href=" ">天津</a>
+										</div>
+										<div class="item">
+											<a href=" ">重庆</a>
+										</div>
+										<div class="item">
+											<a href=" ">河北</a>
+										</div>
+										<div class="item">
+											<a href=" ">山西</a>
+										</div>
+										<div class="item">
+											<a href=" ">河南</a>
+										</div>
+										<div class="item">
+											<a href=" ">辽宁</a>
+										</div>
+										<div class="item">
+											<a href=" ">吉林</a>
+										</div>
+										<div class="item">
+											<a href=" ">黑龙江</a>
+										</div>
+										<div class="item">
+											<a href=" ">内蒙古</a>
+										</div>
+										<div class="item">
+											<a href=" ">江苏</a>
+										</div>
+										<div class="item">
+											<a href=" ">山东</a>
+										</div>
+										<div class="item">
+											<a href=" ">安徽</a>
+										</div>
+										<div class="item">
+											<a href=" ">浙江</a>
+										</div>
+										<div class="item">
+											<a href=" ">福建</a>
+										</div>
+										<div class="item">
+											<a href=" ">湖北</a>
+										</div>
+										<div class="item">
+											<a href=" ">湖南</a>
+										</div>
+										<div class="item">
+											<a href=" ">广东</a>
+										</div>
+										<div class="item">
+											<a href=" ">广西</a>
+										</div>
+										<div class="item">
+											<a href=" ">江西</a>
+										</div>
+										<div class="item">
+											<a href=" ">四川</a>
+										</div>
+										<div class="item">
+											<a class="selected" href=" ">海南</a>
+										</div>
+										<div class="item">
+											<a href=" ">贵州</a>
+										</div>
+										<div class="item">
+											<a href=" ">云南</a>
+										</div>
+										<div class="item">
+											<a href=" ">陕西</a>
+										</div>
+										<div class="item">
+											<a href=" ">甘肃</a>
+										</div>
+										<div class="item">
+											<a href=" ">贵州</a>
+										</div>
+										<div class="item">
+											<a href=" ">宁夏</a>
+										</div>
+										<div class="item">
+											<a href=" ">哈尔滨</a>
+										</div>
+										<div class="item">
+											<a href=" ">昆明</a>
+										</div>
+										<div class="item">
+											<a href=" ">南宁</a>
+										</div>
+										<div class="item">
+											<a href=" ">澳门</a>
+										</div>
+										<div class="item">
+											<a href=" ">桂林</a>
+										</div>
+										<div class="item">
+											<a href=" ">衡阳</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 顶部横向菜单 -->
+				<ul class="fr">
+					<li class="topbar_btn sp1">
+						<a href=" " class="link_login">李政蒙蒙哒</a>
+					</li>
+					<li class="spacer"></li>
+					<li class="topbar_btn sp">
+						<a href=" " class="link_order">我的订单</a>
+					</li>
+					<li class="spacer"></li>
+					<!-- 我的京东选项下拉 -->
+					<li class="dropdownBtn">
+						<a href=" " class="dropdownBtnLink">
+							<span>我的京东
+								<img class="dropdownImg" src="../images/arrow_down.png">
+							</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<div class="dropdownLayer-info">
+							<ul class="info-list">
+								<li class="info-item">
+									<a href=" " class="link-info">待处理订单</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">消息</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">返修退换货</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">我的问答</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">降价商品</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">我的关注</a>
+								</li>
+							</ul>
+							<ul class="info-list">
+								<li class="info-item">
+									<a href=" " class="link-info">我的京豆</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">我的优惠券</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">我的白条</a>
+								</li>
+								<li class="info-item">
+									<a href=" " class="link-info">我的理财</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="spacer"></li>
+	
+					<!-- 京东会员选项 -->
+					<li class="topbar_btn sp">
+						<a href=" " class="link_jdvip">京东会员</a>
+					</li>
+					<li class="spacer"></li>
+	
+					<!-- 企业采购选项 -->
+					<li class="dropdownBtn">
+						<a href=" " class="dropdownBtnLink">
+							<span>企业采购
+								<img class="dropdownImg" src="../images/arrow_down.png">
+							</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<div class="dropdownLayer-corder">
+							<ul class="corder-list">
+								<li class="corder-item">
+									<a href=" " class="corder-link">企业购</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">商用场景观</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">工业品</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">丰客多商城</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">礼品卡</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">微信企业购</a>
+								</li>
+								<li class="corder-item">
+									<a href=" " class="corder-link">大中型企业采购</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="spacer"></li>
+	
+					<!-- 客户服务选项 -->
+					<li class="topbar_btn dropdownBtnc">
+						<div class="link_service">
+							<span>客户服务
+								<img class="dropdownImg" src="../images/arrow_down.png">
+							</span>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="dropdownLayer-service">
+							<h3>客户</h3>
+							<ul class="service-list">
+								<li class="service-item">
+									<a href=" " class="service-link">帮助中心</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">售后服务</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">在线客服</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">意见建议</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">电话客服</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">客服邮箱</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">金融咨询</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">全球售客服</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">企业客服</a>
+								</li>
+							</ul>
+	
+							<h3>商户</h3>
+							<ul class="service-list">
+								<li class="service-item">
+									<a href=" " class="service-link">合作招商</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">成长中心</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">商家后台</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">京麦工作台</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">商家帮助</a>
+								</li>
+								<li class="service-item">
+									<a href=" " class="service-link">规则平台</a>
+								</li>
+							</ul>
+	
+						</div>
+					</li>
+					<li class="spacer"></li>
+	
+					<!-- 网站导航 -->
+					<li class="topbar_btn_nav">
+						<div class="link_nav">
+							<span>网站导航
+								<img class="dropdownImg" src="../images/arrow_down.png">
+							</span>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="dropdownLayer-nav">
+							<div class="col1">
+								<h3>特色主题</h3>
+								<ul class="nav-list">
+									<li class="nav-item">
+										<a href=" " class="nav-link">新品首发</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东金融</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">全球售</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">国际站</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东会员</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东预售</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">台湾售</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">俄语售</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">装机大师</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">0元评测</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">港澳售</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">优惠券</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">秒杀</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">闪购</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">印尼站</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">陪伴计划</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">出海招商</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">拍拍二手</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">买什么</a>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="col2">
+								<h3>行业频道</h3>
+								<ul class="nav-list">
+									<li class="nav-item">
+										<a href=" " class="nav-link">手机</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">智能数码</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">玩3C</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">电脑办公</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">家用电器</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京鱼座智能</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东服饰</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东生鲜</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">家装城</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">母婴</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">食品</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">农资频道</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">整车</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">图书</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">劳动防护</a>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="col3">
+								<h3>生活服务</h3>
+								<ul class="nav-list">
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东众筹</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">白条</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东金融App</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东小金库</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">理财</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">话费</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">水电煤</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">彩票</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">旅行</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">机票酒店</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">电影票</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东到家</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">游戏</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">拍拍回收</a>
+									</li>
+								</ul>
+							</div>
+	
+							<div class="col4">
+								<h3>更多精选</h3>
+								<ul class="nav-list">
+									<li class="nav-item">
+										<a href=" " class="nav-link">合作招商</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东通讯</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东E卡</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">企业采购</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">服务市场</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">办公生活馆</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">校园加盟</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东社区</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">游戏社区</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">关于我们</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东安联保险</a>
+									</li>
+									<li class="nav-item">
+										<a href=" " class="nav-link">京东数科保险</a>
+									</li>
+								</ul>
+							</div>
+	
+						</div>
+					</li>
+					<li class="spacer"></li>
+	
+					<!-- 手机京东下载 -->
+					<li class="dropdown-phone-jd">
+						<span class="link_phone_jd">手机京东</span>
+						<div class="dropdownLayer-phone">
+							<img src="../images/code.png" alt="">
+							扫描二维码下载京东APP
+						</div>
+					</li>
 				</ul>
-				
-				 <ul class="nav_ul2">
-		  	 	  	<li><a href="">洋洋宝贝</a><span>|</span></li>
-		  	 	  	<li><a href="">我的订单</a><span>|</span></li>
-		  	 	  	<li><a href="">我的京东</a><span>|</span></li>
-		  	 	  	<li><a href="">京东会员</a><span>|</span></li>
-		  	 	  	<li><a href="">企业采购</a><span>|</span></li>
-		  	 	  	<li><a href="">京东手机</a><span>|</span></li>
-		  	 	  	<li><a href="">关注京东</a><span>|</span></li>
-		  	 	  	<li><a href="">客户服务</a><span>|</span></li>
-		  	 	  	<li><a href="">网站导航</a></li>
-		  	 	  </ul>
 			</div>
-			
 		</div>
+	
 		<!--导航结束-->
 		
 		<!--搜索框开始-->
 		<div class="search">
 			<div class="warp">
-				<img src="images/logo.jpg" />
+				<img src="../images/logo.jpg" />
 				
 				<div class="search_div">
 					<input type="text" class="search_text">
@@ -81,7 +577,7 @@
 		
 		<!--商品详情展示开始-->
 		 <div class="info warp">
-		  	
+	  	
 		  	  <ul>
 		  	  	<li class="info_1"><input type="checkbox" /> </li>
 		  	  	<li class="info_2"> <img src="../images/img1.jpg" width="80px"/> </li>

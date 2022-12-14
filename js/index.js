@@ -178,3 +178,66 @@ window.onscroll = function () {
     }
 }
 
+// 京东秒杀倒计时
+// 定时器，每隔1000毫秒执行一次
+setInterval(showCountdown, 1000);
+function showCountdown() {
+
+    const nowTime = new Date();
+    const endTime = new Date("2022/12/31");
+    const time = endTime.getTime() - nowTime.getTime();
+
+    const hour = Math.floor(time / (1000 * 60 * 60) % 24);
+    const hours = hour < 10 ? "0" + hour : hour;
+
+    const minute = Math.floor(time / (1000 * 60) % 60);
+    const minutes = minute < 10 ? "0" + minute : minute;
+
+    const second = Math.floor(time / 1000 % 60);
+    const seconds = second < 10 ? "0" + second : second;
+
+    const getHours = document.getElementById("hour");
+    const getMinutes = document.getElementById("min");
+    const getSeconds = document.getElementById("sec");
+
+    getHours.innerHTML = hours;
+    getMinutes.innerHTML = minutes;
+    getSeconds.innerHTML = seconds;
+
+}
+
+// JOY寻宝tab切换
+window.onload = function JOYTab() {
+    // 1
+    $("#tab1").mouseenter(function () {
+        $("#goodsTab").css("display", "inline-block");
+        $("#goodsTab2").css("display", "none");
+        $("#goodsTab3").css("display", "none");
+        $("#goodsTab4").css("display", "none");
+    });
+
+    // 2
+    $("#tab2").mouseenter(function () {
+        $("#goodsTab").css("display", "none");
+        $("#goodsTab2").css("display", "inline-block");
+        $("#goodsTab3").css("display", "none");
+        $("#goodsTab4").css("display", "none");
+    });
+
+    //  3
+    $("#tab3").mouseenter(function () {
+        $("#goodsTab").css("display", "none");
+        $("#goodsTab2").css("display", "none");
+        $("#goodsTab3").css("display", "inline-block");
+        $("#goodsTab4").css("display", "none");
+    });
+
+    // 4
+    $("#tab4").mouseenter(function () {
+        $("#goodsTab").css("display", "none");
+        $("#goodsTab2").css("display", "none");
+        $("#goodsTab3").css("display", "none");
+        $("#goodsTab4").css("display", "inline-block");
+    });
+
+}
