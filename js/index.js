@@ -145,8 +145,9 @@ window.onscroll = function () {
     //获取滚动条距上面的距离
     let top = document.documentElement.scrollTop || document.body.scrollTop;
     //获取元素距上面的距离
-    let top1 = header.offsetHeight + slideBanner.offsetHeight + 40;
-    console.log(top1);
+    let top1 = header.offsetHeight + slideBanner.offsetHeight - 220;
+
+    // console.log(top2);
     //判断
     if (top >= top1) {
         //固定定位
@@ -154,6 +155,8 @@ window.onscroll = function () {
     } else {
         elevator.className = 'elevator';
     }
+
+
 
     //楼层效果
     //判断top距上面的距离，对应的a修改字体颜色
@@ -243,13 +246,14 @@ window.onload = function JOYTab() {
 }
 
 // 推荐tab切换
-function recTab1 () {
-    $("#rec1").css("display", "inline-block");
-    $("#rec2").css("display", "none");
-    console.log( "user click tab1 ")
+function recTab1() {
+    $("#del1").css("display", "none");
+    console.log("user click tab1 ")
 }
-function recTab2 () {
+function recTab2() {
     $("#rec1").css("display", "none");
     $("#rec2").css("display", "inline-block");
-    console.log( "user click tab2 ")
+    console.log("user click tab2 ")
 }
+
+

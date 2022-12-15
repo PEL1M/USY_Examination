@@ -2,6 +2,7 @@ body {
   font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
     "\5B8B\4F53", sans-serif;
   color: #666;
+  background-color: #f4f4f4;
 }
 
 ul {
@@ -14,6 +15,10 @@ a {
 
 /* 顶部悬停下拉选单 */
 .shortcut {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  z-index: 200;
   background-color: #e3e4e5;
   border-bottom: 1px solid #ddd;
 }
@@ -383,13 +388,20 @@ a.service-link {
 
 /* 头部样式开始 */
 .header {
-  display: inline-block;
+  /* display: inline-block; */
   overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 30px;
+  bottom: 0;
   width: 100%;
   height: 140px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  z-index: 200;
 }
+
 
 .wrap {
   width: 1190px;
@@ -517,7 +529,7 @@ a.service-link {
   width: 100%;
   height: 470px;
   margin-bottom: 30px;
-  padding-top: 10px;
+  padding-top: 180px;
 }
 
 .banner-box {
@@ -2316,7 +2328,7 @@ a.service-link {
 
 .elevator-fix {
   position: fixed;
-  top: 75px;
+  top: 300px;
 }
 
 .elevator > .active {
