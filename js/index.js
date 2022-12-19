@@ -247,7 +247,8 @@ window.onload = function JOYTab() {
 
 // 推荐tab切换
 function recTab1() {
-    $("#del1").css("display", "none");
+    $("#rec1").css("display", "inline-block");
+    $("#rec2").css("display", "none");
     console.log("user click tab1 ")
 }
 function recTab2() {

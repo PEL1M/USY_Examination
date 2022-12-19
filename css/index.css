@@ -399,7 +399,7 @@ a.service-link {
   height: 140px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
-  z-index: 200;
+  z-index: 100;
 }
 
 

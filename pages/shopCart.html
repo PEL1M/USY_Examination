@@ -534,7 +534,7 @@
 	<!--搜索框开始-->
 	<div class="header">
 		<div class="wrap">
-			<div class="logo">
+			<div class="logo" >
 				<img class="logoImg"
 					src="https://misc.360buyimg.com/jdf/1.0.0/unit/global-header/5.0.0/i/jdlogo-201708-@1x.png">
 			</div>
@@ -542,7 +542,7 @@
 		<div class="search">
 			<input class="searchInput">
 			</input>
-			<input class="searchBtn" type="button" value="搜索" onclick="javascript:;">
+			<input class="searchBtn" type="button" value="搜索" onclick="javascript:;" >
 			</input>
 		</div>
 	</div>
@@ -569,7 +569,7 @@
 	<!--warp令内容居中显示-->
 	<div class="tips warp">
 		<ui>
-			<li><input type="checkbox">全选</li>
+			<li><input type="checkbox" name="select" id="selAll">全选</li>
 			<li>商品</li>
 			<li>单价</li>
 			<li>数量</li>
@@ -583,7 +583,7 @@
 	<div class="info warp" id="del1">
 
 		<ul>
-			<li class="info_1"><input type="checkbox" /> </li>
+			<li class="info_1"><input type="checkbox" name="select" /> </li>
 			<li class="info_2"> <img src="../images/img1.jpg" width="80px" /> </li>
 			<li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
 			<li class="info_4"><a>颜色：灰色+粉红</a> </li>
@@ -606,7 +606,7 @@
 	<div class="info warp" id="del2">
 
 		<ul>
-			<li class="info_1"><input type="checkbox" /> </li>
+			<li class="info_1"><input type="checkbox"  name="select"/> </li>
 			<li class="info_2"> <img src="../images/img2.jpg" width="80px" /> </li>
 			<li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
 			<li class="info_4"><a>颜色：灰色+粉红</a> </li>
@@ -629,7 +629,7 @@
 	<div class="info warp" id="del3">
 
 		<ul>
-			<li class="info_1"><input type="checkbox" /> </li>
+			<li class="info_1"><input type="checkbox" name="select"/> </li>
 			<li class="info_2"> <img src="../images/img3.jpg" width="80px" /> </li>
 			<li class="info_3"><a>【京东超市】desha春秋季儿童休闲服</a></li>
 			<li class="info_4"><a>颜色：灰色+粉红</a> </li>
@@ -649,7 +649,7 @@
 
 	</div>
 
-	<div style="height: 300px;">
+	<div style="height: 200px;">
 		</div>
 
 	<!--商品详情展示结束-->
@@ -657,15 +657,15 @@
 	<!--结算窗口开始-->
 	<div class="balance warp">
 		<ul class="balance_ul1">
-			<li><input type="checkbox">全选</li>
-			<li>删除选中商品</li>
+			<li><input type="checkbox" name="select" id="selAll2">全选</li>
+			<!-- <li>删除选中商品</li>
 			<li>移到我的关注</li>
-			<li>清除下柜商品</li>
+			<li>清除下柜商品</li> -->
 		</ul>
 
 		<ul class="balance_ul2">
-			<li>已经选择<span id="sl">1</span>件商品</li>
-			<li>总价￥<span id="zj">200</span></li>
+			<li>已经选择<span id="sl">0</span>件商品</li>
+			<li>总价￥<span id="zj">0</span></li>
 			<li class="butt">去结算</li>
 		</ul>
 	</div>
